@@ -8,6 +8,8 @@ var h1 = document.querySelector("h1");
 var resetButton = document.querySelector("#reset");
 var easyBtn = document.querySelector("#easyBtn");
 var hardBtn = document.querySelector("#hardBtn");
+var easyHint = document.getElementById("#hint")
+
 
 easyBtn.addEventListener("click",  function(){
     hardBtn.classList.remove("selected");
@@ -66,7 +68,8 @@ function changeColors(color) {
 }
 
 function pickColor() {
-   var random = Math.floor(Math.random() * colors.length);
+    var random = Math.floor(Math.random() * colors.length);
+    hint.style.color = colors[random];
     return colors[random];
 }
 

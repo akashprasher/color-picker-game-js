@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 body {
     background-color: #232323;
 }
@@ -13,6 +22,7 @@ body {
 #container {
     margin: 0 auto;
     max-width: 600px;
+    height: 70vh;
 }
 
 h1{
@@ -21,16 +31,38 @@ h1{
 }
 
 #stripe {
+    margin: 20px 0px;
     background: seashell;
     height: 30px;
     text-align: center;
 }
 
 .selected {
+    color: #ffffff;
     background-color: blue;
     border: none;
 }
 
 button{
     border: none;
+}
+
+footer {
+    text-align: center;
+}
+
+.foot-er {
+    color: #ffffff;
+}
+
+.foot-er a {
+    color: aqua;
+    text-decoration: none;
+    margin: 0px 5px;
+    font-weight: 300;
+}
+
+#hint {
+    color: aqua;
+    /* background-color: #fff; */
 }
